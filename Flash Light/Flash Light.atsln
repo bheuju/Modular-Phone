@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Flash Light", "Flash Light\Flash Light.cproj", "{3C7CDCCA-1F6A-4AA7-9D78-D98721622A0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C7CDCCA-1F6A-4AA7-9D78-D98721622A0D}.Debug|AVR.ActiveCfg = Debug|AVR
+		{3C7CDCCA-1F6A-4AA7-9D78-D98721622A0D}.Debug|AVR.Build.0 = Debug|AVR
+		{3C7CDCCA-1F6A-4AA7-9D78-D98721622A0D}.Release|AVR.ActiveCfg = Release|AVR
+		{3C7CDCCA-1F6A-4AA7-9D78-D98721622A0D}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
