@@ -31,10 +31,29 @@
 
 #include <avr/io.h>
 
+void initPWM()
+{
+	//Timer1 used in Fast PWM mode
+	
+	DDRB |= (1<<PINB1);	//OCR1A (PB1) pin as output
+	
+	TCCR1B |= (1<<CS10);	//No prescaler
+	
+	TCCR1B |= (1<<WGM13) | (1<<WGM12);	//Fast PWM
+	TCCR1A |= (1<<WGM11);	
+	
+	TCCR1A |= (1<<COM1A1);	//PWM non-inverting mode
+	
+	ICR1 = 5999;	//top value - for 150Hz PWM freq
+	OCR1A = 4000;	//higher value -> high duty cycle
+}
+
 int main(void)
 {
+	initPWM();
+	
     while(1)
     {
-        //TODO:: Please write your application code 
+        
     }
 }
