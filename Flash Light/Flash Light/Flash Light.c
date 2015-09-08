@@ -19,7 +19,7 @@
 	
 	Notes:
 		* Receives 16 bit data for PWM value
-		* Master needs to send two times 8 bit data
+		* Master needs to send two times 8 bit data (dataLow -> dataHigh)
 		
 		
 	Operation Guidelines:
@@ -59,6 +59,7 @@ void initPWM()
 	TCCR1A |= (1<<COM1A1);	//PWM non-inverting mode
 	
 	ICR1 = 5999;	//top value - for 150Hz PWM freq
+	//ICR1 = 19999;
 	OCR1A = 1;	//higher value -> high duty cycle
 }
 
